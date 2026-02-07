@@ -8,17 +8,15 @@ export default function Home() {
   };
 
   return (
-    // 1. bg-yellow-300: 배경을 노란색으로 설정 (이 영역 안에 카드가 들어갑니다)
-    // 2. flex items-center justify-center: 이 노란 박스 안의 내용물을 정중앙에 배치
-    // 3. min-h-screen: 노란색 배경을 화면 전체 높이로 꽉 채움
+    // 전체 배경: 노란색 (bg-yellow-300)
     <div className="min-h-screen flex items-center justify-center bg-yellow-300">
       
-      {/* 흰색 카드 박스 (여기는 건드릴 필요 없음) */}
-      <div className="w-full max-w-md bg-yellow rounded-3xl shadow-xl overflow-hidden p-10 text-center mx-4">
+      {/* 카드 배경: 흰색 (bg-white로 수정함) */}
+      <div className="w-full max-w-md bg-white rounded-3xl shadow-xl overflow-hidden p-10 text-center mx-4">
         
         <div className="mb-10">
           <h1 className="text-3xl font-bold text-blue-600 mb-4">
-            나만의 성향 테스트
+            나만의 성향 테스트입니다.
           </h1>
           <p className="text-gray-500">
             간단한 질문으로 알아보는<br />나의 성향은 무엇일까요?
